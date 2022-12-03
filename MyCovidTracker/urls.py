@@ -20,9 +20,9 @@ from rest_framework import routers
 from mainApp.views import MyCovidRecordViewSet
 
 router = routers.DefaultRouter()
-router.register(r'myCovidRecordViewSet', MyCovidRecordViewSet)
+router.register(r'myCovidRecord', MyCovidRecordViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api', include(router.urls)),
+    path('api/', include(router.urls)),
 ]
