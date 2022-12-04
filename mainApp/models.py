@@ -5,11 +5,15 @@ from django.db import models
 class MyCovidRecord(models.Model):
     unique_id = models.CharField(max_length=128)
     country_id = models.CharField(max_length=50)
+    country_name = models.CharField(max_length=50)
     total_confirmed_cases = models.IntegerField()
     total_deaths_cases = models.IntegerField()
     total_recovered_cases = models.IntegerField()
     date = models.DateTimeField()
     created_date = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        unique_together = ('unique_id', 'country_id',)
 
     def __str__(self):
         return "Country: " + self.country_id + " , total confirmed cases: " + str(self.total_confirmed_cases) + \
