@@ -1,5 +1,7 @@
 # Covid Tracker BackEnd
-this is a backend that tracks covid records , with the ability to add desired records to the data base , and then show them when needed.
+this is a backend to save and send back covid records on request. 
+
+* for more info check out the front end https://github.com/SalimHass/CovidTracker
 
 ------
 
