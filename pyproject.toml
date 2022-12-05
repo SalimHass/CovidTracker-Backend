@@ -6,7 +6,7 @@ description = ""
 authors = ["salimhass <salim.hassouneh@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.7"
 asgiref = "3.5.2"
 certifi = "2022.9.24"
 charset-normalizer= "2.1.1"
